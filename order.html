@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Order Ahead - Bahay Kape</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<script src="config.js"></script>
+</head>
+<body>
+<header>
+  <h1>Bahay Kape</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="order.html">Order Ahead</a>
+  </nav>
+</header>
+<main>
+  <h2>Order Ahead</h2>
+  <p>Order now and pick it up at the shop.</p>
+  <form id="orderForm" novalidate>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name">
+    <span class="error" id="nameError"></span>
+
+    <label for="mobile">Mobile number</label>
+    <input type="text" id="mobile" name="mobile" placeholder="09XXXXXXXXX">
+    <span class="error" id="mobileError"></span>
+
+    <label for="item">Item</label>
+    <select id="item" name="item">
+      <option>Brewed Coffee</option>
+      <option>Cafe Latte</option>
+      <option>Iced Caramel Macchiato</option>
+      <option>Ensaymada</option>
+    </select>
+
+    <label for="qty">Quantity</label>
+    <input type="number" id="qty" name="qty" value="1">
+    <span class="error" id="qtyError"></span>
+
+    <button type="submit">Place order</button>
+  </form>
+  <p id="result"></p>
+</main>
+<footer><p>&copy; 2026 Bahay Kape</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
