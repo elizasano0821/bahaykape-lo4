@@ -22,6 +22,6 @@ document.getElementById("orderForm").addEventListener("submit", function (e) {
   }
 
   if (ok) {
-    document.getElementById("resut").textContent = "Thank you, " + name + "! Your order is received.";
+    document.getElementById("result").textContent = "Thank you, " + name + "! Your order is received.";
   }
 });
