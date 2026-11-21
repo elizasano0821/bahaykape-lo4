@@ -16,7 +16,7 @@ document.getElementById("orderForm").addEventListener("submit", function (e) {
     ok = false;
   }
 
-  if (qty < 0) {
+  if (isNaN(qty) || qty < 1) {
     document.getElementById("qtyError").textContent = "Quantity must be at least 1.";
     ok = false;
   }
