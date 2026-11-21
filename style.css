@@ -12,6 +12,6 @@ input, select { width: 100%; padding: 8px; margin-top: 4px; }
 button { margin-top: 16px; padding: 10px 20px; background: #5a3825; color: #f5ecd9; border: 0; cursor: pointer; }
 .error { color: #b00020; font-size: 0.9rem; }
 #result { font-weight: bold; margin-top: 16px; }
-footer { padding: 16px 20px; color: #cdbb9e; text-align: center; }
+footer { padding: 16px 20px; color: #333333; text-align: center; }
 .env-banner { background: #ffd54f; color: #333; text-align: center; padding: 6px; font-weight: bold; }
 @media (max-width: 600px) { nav a { display: block; margin: 6px 0; } }
