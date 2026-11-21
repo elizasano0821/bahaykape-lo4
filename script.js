@@ -11,7 +11,7 @@ document.getElementById("orderForm").addEventListener("submit", function (e) {
     ok = false;
   }
 
-  if (mobile.length < 5) {
+  if (mobile.length !== 11) {
     document.getElementById("mobileError").textContent = "Please enter a valid mobile number.";
     ok = false;
   }
