@@ -1,6 +1,11 @@
 document.getElementById("orderForm").addEventListener("submit", function (e) {
   e.preventDefault();
-
+  
+// Clear previous error messages
+  document.getElementById("nameError").textContent = "";
+  document.getElementById("mobileError").textContent = "";
+  document.getElementById("qtyError").textContent = "";
+  
   var name = document.getElementById("name").value.trim();
   var mobile = document.getElementById("mobile").value.trim();
   var qty = parseInt(document.getElementById("qty").value, 10);
@@ -23,5 +28,9 @@ document.getElementById("orderForm").addEventListener("submit", function (e) {
 
   if (ok) {
     document.getElementById("result").textContent = "Thank you, " + name + "! Your order is received.";
+  } else {
+    document.getElementById("result").textContent = "";
   }
+
+
 });
